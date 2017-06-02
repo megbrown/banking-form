@@ -4,32 +4,50 @@
 	</head>
 	<body>
 		<form>
-			First Name:
-			Middle Initial:
-			Last Name:
-			Address:
-			Occupation:
-			Employer:
-			Employer address:
-			Type of loan (select) 
-				Commercial
-				Real Estate
-				Personal
-				Mortgage
-			Amount of loan requested:
-			Loan length (radio)
-				5 years
-				10 years
-				15 years
-			Special conditions (checkbox)
-				I have a down payment
-				Out of state resident
-				Married
-				Loan will be cosigned
-			Additional commentst (text area)
-			Email address:
-			Telephone number:
-			LinkedIn:
+			<fieldset>
+				<legend>Name</legend>
+				First Name:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Middle Initial:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Last Name:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Address:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Work</legend>
+				Occupation:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Employer:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Employer address:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Loan Info</legend>
+				Type of loan:<br>
+				<select name="loan-type">
+					<option value="commercial">Commercial</option><br>
+					<option value="real-estate">Real Estate</option><br>
+					<option value="personal">Personal</option><br>
+					<option value="mortgage">Mortgage</option><br>
+				</select><br><br>
+				Amount of loan requested:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Loan length:<br>
+				<input type="radio" name="loan" value="5" checked="checked">5 Years<br>
+				<input type="radio" name="loan" value="10">10 Years<br>
+				<input type="radio" name="loan" value="15">15 Years<br><br>
+				Special conditions:<br>
+				<input type="checkbox" name="conditions" value="down-payment" checked="checked">I have a down payment<br>
+				<input type="checkbox" name="conditions" value="out-of-state">Out of state resident<br>
+				<input type="checkbox" name="conditions" value="married">Married<br>
+				<input type="checkbox" name="conditions" value="cosigned">Loan will be cosigned<br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Comments</legend>
+				Additional comments:<br><textarea name="comments" rows="10" columns="40"></textarea><br><br>
+			</fieldset>
+			<fieldset>
+				<legend>Contact</legend>
+				Email address:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				Telephone number:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+				LinkedIn:<br><input type="text" name="firstname" size="40" maxlength="40"><br><br>
+			</fieldset>
+			<input type="submit" value="Submit Information">
 		</form>
 	</body>
 </html>
